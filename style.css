@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  box-shadow: 0px 3px 10px #0000004d;
+  position: sticky;
+  top: 0px;
+  background: white;
+}
+
+nav {
+  min-height: 10vh;
+  margin: auto;
+  width: 90%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1,
+nav ul {
+  font-size: 1.5rem;
+  flex: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section h2 {
+  font-size: 5rem;
+  color: white;
+}
+
+.home {
+  background: linear-gradient(to right top, #f12711, #f5af19);
+}
+
+.project {
+  background: linear-gradient(to right top, #2193b0, #6dd5ed);
+}
+
+.contact {
+  background: linear-gradient(to right top, #dce35b, #45b649);
+}
+
+.bubble {
+  position: absolute;
+  z-index: -2; /* Goes behind the text */
+  background: linear-gradient(to right top, #f12711, #f5af19);
+
+  /* padding doesn't work very well, so use transform to give some paddings all around */
+  transform: scale(2);
+  transition: all 0.5s ease;
+}
